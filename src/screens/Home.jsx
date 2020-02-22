@@ -85,7 +85,8 @@ class Home extends Component {
     rowSelection={rowSelection} 
     pagination={this.state.pagination}
     onChange={this.handleTableChange}
-
+    scroll={{ x: 200, y: 300 }}
+    pagination={{ pageSize: 5 }} 
     >
         <Column title="id" dataIndex="id" key="id"/>
         <Column title="title" dataIndex="title" key="title"/>
